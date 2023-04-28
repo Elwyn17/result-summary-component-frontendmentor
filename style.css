@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+/* main container */
+
 .main-container {
     position: absolute;
     top: 50%;
@@ -19,6 +21,8 @@
     display: flex;
 }
 
+/* left inner container */
+
 .left-inner-container {
     width: 50%;
     height: inherit;
@@ -30,12 +34,12 @@
     align-items: center;
 }
 
-.result-heading {
+.left-inner-container-heading {
     color: hsl(241, 100%, 89%);
     font-size: 1.4rem;
 }
 
-.inner-circle {
+.left-inner-container-circle {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -46,28 +50,30 @@
     align-items: center;
 }
 
-.result-number {
+.left-inner-container-result {
     color: white;
     font-size: 5rem;
 }
 
-.max-result {
+.left-inner-container-total-result {
     color: hsla(241, 100%, 89%, .6);
     font-weight: 700;
 }
 
-.great {
+.left-inner-container-result-meaning {
     color: white;
     font-size: 2rem;
 }
 
-.detail {
+.left-inner-container-result-description {
     width: 65%;
     text-align: center;
     color: hsla(241, 100%, 89%, .9);
     line-height: 1.5;
     transform: translateY(-25%);
 }
+
+/* right inner container */
 
 .right-inner-container {
     padding: 40px;
@@ -78,18 +84,18 @@
     justify-content:space-around;
 }
 
-.heading-summary {
+.right-inner-container-heading {
     color: hsl(224, 30%, 27%);
 }
 
-.table {
+.right-inner-container-table {
     height: 260px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.summary-box {
+.table-box {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -113,13 +119,13 @@
     background-color: hsla(241, 100%, 89%, .3);
 }
 
-.left-summary {
+.left-side-table {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.left-summary-text {
+.left-side-table-text {
     font-weight: 700;
     margin-left: 10px;
 }
@@ -144,18 +150,24 @@
     font-weight: 700;
 }
 
-.dark-color {
+.color-dark {
     color: hsl(224, 30%, 27%);
 }
 
-.light-color {
+.color-light {
     color: hsla(224, 30%, 27%, .5);
 }
 
 button {
     padding: 15px;
+    border: none;
     border-radius: 30px;
     color: white;
     background-color: hsl(224, 30%, 27%);
     font-size: 1.1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
