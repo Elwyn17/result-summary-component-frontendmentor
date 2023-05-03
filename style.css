@@ -171,3 +171,79 @@ button:hover {
     cursor: pointer;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
+
+
+/* Mobile Screen only */
+
+@media only screen and (max-width: 375px) {
+
+    /* main container */
+
+    .main-container {
+        flex-direction: column;
+        top: 0%;
+        left:0%;
+        transform: none;
+        width: 100%;
+        height:auto;
+    }
+
+    /* left inner container */
+
+    .left-inner-container {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        height: 350px;
+    }
+
+    .left-inner-container-heading {
+        font-size: 1rem;
+    }
+
+    .left-inner-container-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .left-inner-container-result {
+        font-size: 4rem;
+    }
+
+    .left-inner-container-total-result {
+        font-weight: 500;
+    }
+
+    .left-inner-container-result-meaning {
+        font-size: 1.5rem;
+    }
+
+    .left-inner-container-result-description {
+        width: 65%;
+        font-size: 0.9rem;
+        transform: translateY(-30%);
+    }
+
+    /* right inner container */
+
+    .right-inner-container {
+        padding: 30px;
+        width: 100%;
+        height: 470px;
+    }
+
+    .right-inner-container-heading {
+        font-size: 1rem;
+        transform: translateY(-90%);
+    }
+
+    .right-inner-container-table {
+        transform: translateY(-6%);
+    }
+
+    button {
+        transform: translateY(-60%);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
